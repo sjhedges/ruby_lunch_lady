@@ -30,7 +30,7 @@ def main_dish_method
 end
 
 def side_1_method
-  puts """Hello! What you would like for lunch.\n ------------------"""
+  puts "Please select a side.\n ------------------"
   @side.each_with_index { |x, i| puts "#{i+1}. #{x[:side]}...$#{x[:price]}" }
   @side_1 = gets.strip.to_i - 1
   case @side_1
@@ -45,7 +45,7 @@ def side_1_method
 end
 
 def side_2_method
-  puts """Hello! What you would like for lunch.\n ------------------"""
+  puts "Please select a side.\n ------------------"
   @side.each_with_index { |x, i| puts "#{i+1}. #{x[:side]}...$#{x[:price]}" }
   @side_2 = gets.strip.to_i - 1
   case @side_2
